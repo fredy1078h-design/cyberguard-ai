@@ -134,6 +134,15 @@
             height: 100%;
             border: 0;
         }
+        @keyframes moverTexto {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+.titulo-marquesina {
+    display: inline-block;
+    white-space: nowrap;
+    animation: moverTexto 12s linear infinite;
+}
     </style>
 
     <!-- fonts -->
@@ -180,7 +189,9 @@
             <section class="row">
                 <div class="col-md-6">
                     <div class="headings">
-                        <h1 class="wow animated fadeInDown"><marqee behavior="scroll" direction="left" scrollamount="5">Protección Inteligente Contra Amenazas Digitales</marqee></h1>
+                       <h1 class="wow animated fadeInDown" style="overflow: hidden;">
+    <span class="titulo-marquesina">Protección Inteligente Contra Amenazas Digitales</span>
+</h1>
                         <p class="wow animated fadeInLeft">En CyberGuard AI impulsamos la ciberseguridad defensiva y ofensiva mediante modelos de Inteligencia Artificial que detectan, previenen y neutralizan ciberataques en tiempo real.</p>
                         <div class="row">
                             <div class="col-xs-6 col-sm-6 col-md-5">
