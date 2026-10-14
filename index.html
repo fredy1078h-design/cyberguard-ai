@@ -135,23 +135,47 @@
             border: 0;
         }
         @keyframes moverTexto {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-}
-.titulo-marquesina {
-    display: inline-block;
-    white-space: nowrap;
-    animation: moverTexto 12s linear infinite;
-}
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .titulo-marquesina {
+            display: inline-block;
+            white-space: nowrap;
+            animation: moverTexto 12s linear infinite;
+        }
+
+        /* Estilos específicos adaptados para la sección Academia dentro del diseño CyberGuard */
+        #academia {
+            background: #0b0f19;
+            color: #e5edf9;
+            padding: 70px 20px;
+            font-family: inherit;
+            box-sizing: border-box;
+            border-top: 1px solid #1a233a;
+        }
+        #academia * { box-sizing: border-box; }
+        #academia .wrap { max-width: 1000px; margin: 0 auto; }
+        #academia h2 { font-size: clamp(1.5rem, 4vw, 2.2rem); margin: 0 0 8px; color: #fff; }
+        #academia h3 { margin: 0 0 10px; color: #00ffcc; }
+        #academia p.sub { color: #9ca3af; margin: 0 0 28px; }
+        #academia .card { background: #111827; border: 1px solid #1f293d; border-radius: 14px; padding: 25px; margin-bottom: 40px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); }
+        #academia input[type=text] { width: 100%; padding: 14px; border-radius: 10px; border: 1px solid #00ffcc; background: #0b0f19; color: #ffffff; font: 1.1rem ui-monospace, Menlo, monospace; }
+        #academia button.cg-action-btn { background: #00ffcc; color: #070911; border: 0; border-radius: 10px; padding: 12px 20px; font-weight: 700; cursor: pointer; margin-top: 12px; box-shadow: 0 0 15px rgba(0, 255, 204, 0.4); transition: all 0.3s ease; }
+        #academia button.cg-action-btn:hover { background: #00b388; color: #ffffff; box-shadow: 0 0 20px rgba(0, 255, 204, 0.7); }
+        #academia button:disabled { opacity: .5; cursor: wait; }
+        #academia .bar { height: 10px; background: #070911; border-radius: 6px; margin-top: 14px; overflow: hidden; border: 1px solid #1f293d; }
+        #academia .bar i { display: block; height: 100%; width: 0; background: #f87171; transition: width .3s, background .3s; }
+        #academia .term { background: #05070d; color: #34d399; font: .95rem ui-monospace, Menlo, monospace; border-radius: 10px; padding: 14px; margin-top: 14px; min-height: 96px; overflow: hidden; word-break: break-all; border: 1px solid #1a233a; }
+        #academia .res { margin-top: 14px; font-size: 1.05rem; }
+        #academia .res b { color: #00ffcc; }
+        #academia .tips { color: #9ca3af; font-size: .92rem; margin-top: 10px; }
+        #academia details { background: #111827; border: 1px solid #1f293d; border-radius: 12px; padding: 14px 18px; margin-bottom: 12px; }
+        #academia summary { cursor: pointer; font-weight: 600; color: #ffffff; }
+        #academia details p, #academia details li { color: #9ca3af; line-height: 1.55; }
     </style>
 
     <!-- fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700|Oxygen:400,300,700' rel='stylesheet'>
-
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body id="home">
 
@@ -167,6 +191,7 @@
             <li><a href="#gallery">Proyectos</a></li>
             <li><a href="#impact">Impacto</a></li>
             <li><a href="#videos">Videos</a></li>
+            <li><a href="#academia">Academia</a></li> <!-- Enlace añadido al menú -->
             <li><a href="#testimonial">Testimonios</a></li>
             <li><a href="#contact">Contacto</a></li>
         </ul>
@@ -190,8 +215,8 @@
                 <div class="col-md-6">
                     <div class="headings">
                        <h1 class="wow animated fadeInDown" style="overflow: hidden;">
-    <span class="titulo-marquesina">Protección Inteligente Contra Amenazas Digitales</span>
-</h1>
+                           <span class="titulo-marquesina">Protección Inteligente Contra Amenazas Digitales</span>
+                       </h1>
                         <p class="wow animated fadeInLeft">En CyberGuard AI impulsamos la ciberseguridad defensiva y ofensiva mediante modelos de Inteligencia Artificial que detectan, previenen y neutralizan ciberataques en tiempo real.</p>
                         <div class="row">
                             <div class="col-xs-6 col-sm-6 col-md-5">
@@ -433,6 +458,44 @@
         </section>
     </section>
 
+    <!-- ****************************** ACADEMIA DE CIBERSEGURIDAD (NUEVA SECCIÓN) ************************** -->
+    <section id="academia">
+        <div class="wrap">
+            <div class="title-box text-center" style="margin-bottom: 40px;">
+                <h1 class="block-title wow animated rollIn" style="color: #fff; font-size: 32px; font-weight: 700;">
+                    <span class="bb-top-left" style="border-color: #00ffcc;"></span>
+                    <span class="bb-bottom-left" style="border-color: #00ffcc;"></span>
+                    🔐 Academia Interactiva de Ciberseguridad
+                    <span class="bb-top-right" style="border-color: #00ffcc;"></span>
+                    <span class="bb-bottom-right" style="border-color: #00ffcc;"></span>
+                </h1>
+                <p class="sub" style="margin-top: 15px;">Aprende jugando: descubre qué tan rápido un atacante podría adivinar una contraseña y cómo protegerte.</p>
+            </div>
+
+            <!-- APARTADO EXCLUSIVO: JUEGO / SIMULADOR -->
+            <div class="card">
+                <h3>🎮 Reto Interactivo: ¿Podemos vulnerar tu contraseña?</h3>
+                <p class="sub" style="margin-bottom:14px">Escribe una contraseña <b>de ejemplo</b> (¡no uses una real!). Todo ocurre en tu navegador: no se envía ni se guarda nada. Es una simulación educativa.</p>
+                <input type="text" id="cg-pw" placeholder="Prueba: 123456, hola2024, T!g3r#Luna_91..." autocomplete="off" maxlength="40">
+                <div class="bar"><i id="cg-bar"></i></div>
+                <button id="cg-go" class="cg-action-btn">⚡ Lanzar ataque simulado</button>
+                <div class="term" id="cg-term">&gt; Esperando objetivo...</div>
+                <div class="res" id="cg-res"></div>
+                <div class="tips" id="cg-tips"></div>
+            </div>
+
+            <!-- GUÍA -->
+            <h3 style="margin-top: 40px; margin-bottom: 20px; font-size: 22px;">📚 Todo lo esencial sobre ciberseguridad</h3>
+            <details open><summary>🎣 Phishing</summary><p>Correos, SMS o llamadas falsas que imitan a un banco o empresa para que entregues datos. Revisa el remitente real, no hagas clic en enlaces con urgencia y entra siempre escribiendo la dirección oficial.</p></details>
+            <details><summary>🦠 Virus, malware y ransomware</summary><ul><li>Instala software solo de tiendas oficiales.</li><li>Mantén antivirus y sistema actualizados.</li><li>No abras adjuntos inesperados (.exe, .zip, macros).</li><li>Haz copias de seguridad 3-2-1 (3 copias, 2 medios, 1 fuera de línea): el ransomware pierde poder si puedes restaurar.</li></ul></details>
+            <details><summary>🔑 Contraseñas seguras</summary><ul><li>Largas (14+ caracteres) mejor que complicadas: una frase de 4-5 palabras al azar.</li><li>Una contraseña distinta para cada cuenta.</li><li>Usa un gestor de contraseñas.</li><li>Nunca uses nombres, fechas o "123456".</li></ul></details>
+            <details><summary>📲 Autenticación en dos pasos (2FA)</summary><p>Aunque roben tu contraseña, necesitan un segundo factor. Prefiere apps autenticadoras o llaves físicas antes que SMS.</p></details>
+            <details><summary>📶 Wi‑Fi y redes públicas</summary><p>Evita entrar a bancos en Wi‑Fi abiertas. Usa VPN, desactiva la conexión automática y cambia la clave por defecto de tu router.</p></details>
+            <details><summary>🧠 Ingeniería social</summary><p>Los atacantes manipulan personas, no máquinas. Desconfía de la urgencia, los premios inesperados y de quien te pida códigos o claves, aunque diga ser soporte técnico.</p></details>
+            <details><summary>🚨 ¿Crees que te hackearon?</summary><ol><li>Cambia la contraseña desde otro dispositivo limpio.</li><li>Activa 2FA y cierra sesiones activas.</li><li>Avisa al banco si hay dinero de por medio.</li><li>Escanea el equipo con un antivirus.</li><li>Reporta el incidente a tu equipo de seguridad.</li></ol></details>
+        </div>
+    </section>
+
     <!-- ****************************** Testimonial ************************** -->
     <section id="testimonial" class="block">
         <section class="container">
@@ -620,6 +683,69 @@
                 </section>
             </section>
         </section>
+
+    <!-- Script del simulador de contraseñas de la Academia -->
+    <script>
+    (function(){
+      var COMMON=["123456","password","12345678","qwerty","123456789","12345","1234","111111","abc123","password1","iloveyou","admin","welcome","monkey","dragon","letmein","123123","000000","contraseña","hola","hola123","carlos","princesa","futbol","te amo","teamo","qwerty123","1q2w3e","654321","superman","654321"];
+      var $=function(i){return document.getElementById(i)};
+      var pw=$("cg-pw"),bar=$("cg-bar"),term=$("cg-term"),res=$("cg-res"),tips=$("cg-tips"),go=$("cg-go");
+      if(!pw)return;
+
+      function pool(p){var n=0;if(/[a-z]/.test(p))n+=26;if(/[A-Z]/.test(p))n+=26;if(/\d/.test(p))n+=10;if(/[^A-Za-z0-9]/.test(p))n+=33;return n}
+      function leet(p){return p.toLowerCase().replace(/4/g,"a").replace(/3/g,"e").replace(/1/g,"i").replace(/0/g,"o").replace(/5/g,"s").replace(/@/g,"a").replace(/\$/g,"s")}
+      function isCommon(p){var l=p.toLowerCase(),s=leet(p).replace(/[\d!._#*-]+$/g,"");
+        return COMMON.indexOf(l)>-1||COMMON.indexOf(s)>-1||COMMON.indexOf(l.replace(/\d+$/,""))>-1}
+      function secs(p){var n=pool(p);return n?Math.pow(n,p.length)/2/1e10:0}
+      function fmt(s){
+        if(s<1)return "menos de 1 segundo";
+        var u=[["segundos",60],["minutos",60],["horas",24],["días",365],["años",1e3],["miles de años",1e3],["millones de años",1e3]];
+        var v=s,i=0;for(;i<u.length-1&&v>=u[i][1];i++)v/=u[i][1];
+        if(i===u.length-1&&v>=1e3)return "billones de años o más";
+        return Math.round(v).toLocaleString("es")+" "+u[i][0];
+      }
+      function score(p){ if(!p)return 0; if(isCommon(p))return 4; var l=Math.log10(secs(p)+1); return Math.max(5,Math.min(100,Math.round(l*9))) }
+      function paint(){var s=score(pw.value);bar.style.width=s+"%";bar.style.background=s<30?"var(--bad)":s<65?"#fbbf24":"var(--ok)"}
+      pw.addEventListener("input",paint);
+
+      function rnd(n){var c="abcdefghijklmnopqrstuvwxyz0123456789!@#$%",o="";for(var i=0;i<n;i++)o+=c[Math.floor(Math.random()*c.length)];return o}
+
+      go.addEventListener("click",function(){
+        var p=pw.value;
+        if(!p){res.textContent="Escribe una contraseña de ejemplo primero.";return}
+        go.disabled=true;res.textContent="";tips.textContent="";
+        var lines=["> Fase 1: ataque de diccionario..."],t=0;
+        var dict=COMMON.slice().sort(function(){return Math.random()-.5}).slice(0,6);
+        var found=isCommon(p);
+        var iv=setInterval(function(){
+          t++;
+          if(t<=6){lines.push("  probando: "+dict[t-1]);}
+          else if(t===7){
+            if(found){lines.push("  ✔ ¡COINCIDENCIA! Contraseña encontrada en el diccionario.");end(true);return}
+            lines.push("  ✘ No está en el diccionario.","> Fase 2: fuerza bruta...");
+          } else if(t<=15){lines.push("  "+rnd(Math.max(p.length,6)))}
+          else {end(false);return}
+          term.innerHTML=lines.slice(-7).join("<br>").replace(/</g,function(m,o,s){return "<"});
+          term.scrollTop=term.scrollHeight;
+        },230);
+        function end(cracked){
+          clearInterval(iv);
+          term.innerHTML=lines.slice(-7).join("<br>");
+          var s=secs(p);
+          if(cracked){
+            res.innerHTML="💀 <b>Vulnerada en menos de 1 segundo.</b> Es una contraseña muy común o una variación obvia de una.";
+            tips.textContent="Los atacantes prueban primero millones de contraseñas filtradas y sus variantes (hola123, P@ssw0rd...). Cambiar letras por símbolos no te salva.";
+          } else {
+            var ok=s>3.15e9;
+            res.innerHTML=(ok?"🛡️ ":"⚠️ ")+"Un equipo potente tardaría aproximadamente <b>"+fmt(s)+"</b> en adivinarla por fuerza bruta.";
+            tips.textContent=ok?"Muy bien. Aun así, usa una contraseña única por cuenta y activa 2FA."
+              :"Hazla más larga: cada carácter extra multiplica el tiempo. Una frase de 4-5 palabras al azar es difícil de adivinar y fácil de recordar.";
+          }
+          go.disabled=false;
+        }
+      });
+    })();
+    </script>
 
     <!-- All the scripts -->
     <script src="assets/js/jquery-2.1.3.min.js"></script>
